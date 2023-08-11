@@ -46,14 +46,15 @@ select{
     font-size: 20px;
 }
 .btn{
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 50px;
     background-color: brown;
     color: beige;
     border: none;
     font-size: 22px;
     padding: 10px;
     margin: 40px;
+    font-weight: bold;
 }
 .form-two{
    
@@ -116,7 +117,8 @@ p{
 }
 .radio-col{
     display: flex;
-   justify-content: center;
+   justify-content: space-between;
+
 }
 .radiobutton-container{
     display: block;
@@ -128,22 +130,101 @@ p{
 }
 .radiobutton-container input{
     position: absolute;
-    width: 0;
-    height: 0;
     opacity: 0;
     cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }
 .costum-radio{
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     width: 20px;
     height: 20px;
     background-color: #eee;
     cursor: pointer;
     border-radius: 50%;
-    margin: 3px;
+    
 }
-.radiobutton-container:hover input .costum-radio{
-    background-color: #ccc;
+.radiobutton-container:hover input ~ .costum-radio{
+    background-color: rgb(186, 179, 179);
+}
+.radiobutton-container input:checked ~ .costum-radio{
+    background-color: #202020;
+}
+.costum-radio::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+
+}
+.radiobutton-container input:checked ~ .costum-radio::after{
+    display: block;
+}
+.radiobutton-container input:focus + .costum-radio{
+    outline: #333 auto 4px;
+}
+.checkbox-container{
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 25px;
+    user-select: none;
+    text-align: center;
+    
+}
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.costum-checkbox{
+    position: absolute;
+    top: 4px;
+    left: 78px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(231, 224, 224);
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.checkbox-container:hover input ~ .costum-checkbox{
+    background-color: rgb(193, 187, 187);
+
+}
+.checkbox-container input:checked ~ .costum-checkbox{
+    background-color: #333;
+}
+.costum-checkbox::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 17px;
+    border: solid rgb(241, 231, 231);
+    border-width: 0 3px 3px 0;
+    top: 4px;
+    left: 8px;
+    transform: rotate(45deg);
+    display: none;
+}
+.checkbox-container input:checked ~ .costum-checkbox::after{
+    display: block;
+}
+.checkbox-container input:focus + .costum-checkbox{
+    outline: #333 auto 4px;
 }
