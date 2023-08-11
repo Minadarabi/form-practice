@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+}
+.form-one{
+   
+    margin: 50px;
+    text-align: center;
+
+}
+.form-one label{
+    font-size: 30px;
+    outline: none;
+    margin: 10px 5px;
+    
+
+}
+.form-one input{
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 20px;
+
+}
+.form-one input:valid{
+    background-color: rgb(123, 194, 123);
+}
+.form-one input:invalid{
+    background-color: rgb(188, 56, 56);
+}
+select{
+    font-size: 20px;
+}
+.btn{
+    width: 80px;
+    height: 60px;
+    background-color: brown;
+    color: beige;
+    border: none;
+    font-size: 22px;
+    padding: 10px;
+    margin: 40px;
+}
+.form-two{
+   
+    font-size: 30px;
+    
+}
+fieldset{
+    padding: 40px;
+    font-weight: bold;
+    border: 2px solid lightgrey;
+}
+fieldset:hover{
+    border: 2px solid gray;
+    cursor: pointer;
+}
+legend{
+    font-size: 24px;
+}
+h1{
+    font-size: 60px;
+    margin: 30px
+
+}
+.radio{
+  display: flex;
+  flex-direction: column;
+   
+}
+.btn-search{
+    font-size: 30px;
+    color: grey;
+    background: none;
+    border: 2px solid lightgray;
+}
+.btn-search:hover{
+    border: 2px solid gray;
+}
+.search{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+.search-field{
+    height: auto;
+    margin: 0 5px;
+    border: 2px solid lightgrey;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+
+}
+.search-field:hover{
+    border: 2px solid grey;
+}
+.search-field::placeholder{
+    font-size: 16px;
+}
+p{
+    margin-bottom: 5px;
+}
+.radio-col{
+    display: flex;
+   justify-content: center;
+}
+.radiobutton-container{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 22px;
+    user-select: none;
+}
+.radiobutton-container input{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.costum-radio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 3px;
+}
+.radiobutton-container:hover input .costum-radio{
+    background-color: #ccc;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form one:</h1>
+    <form class="form-one" action="https://httpbin.org/self" method="post">
+        <label for="">
+            Name:
+            <input type="text" required>
+        </label>
+        <label for="">
+            Email:
+            <input type="email" required>
+        </label>
+        <label for="">
+            choose:
+            <select name="" id="phones">
+                <option value="">iphone 8</option>
+                <option value="">iphone 12</option>
+                <option value="">iphone 12 promax</option>
+            </select>
+        </label>
+        
+        <button class="btn">Buy</button>
+
+    </form>
+    <h1>Form Two:</h1>
+    <form action="" class="form-two" method="post">
+        <fieldset>
+            <legend>This is a search form</legend>
+            <div class="radio">
+                <p>How many search result would you like?</p>
+                <div class="radio-col">
+                    <label for="" class="radiobutton-container">
+                        20
+                        <input type="radio" name="answer">
+                        <span class="costum-radio"></span>
+                    </label>
+                    <label for="" class="radiobutton-container">
+                        40
+                        <input type="radio" name="answer">
+                        <span class="costum-radio"></span>
+                    </label>
+                    <label for="" class="radiobutton-container">
+                        60
+                        <input type="radio" name="answer">
+                        <span class="costum-radio"></span>
+                    </label>
+                    <label for="" class="radiobutton-container">
+                        80
+                        <input type="radio" name="answer">
+                        <span class="costum-radio"></span>
+                    </label>
+                    <label for="" class="radiobutton-container">
+                        100
+                        <input type="radio" name="answer">
+                        <span class="costum-radio"></span>
+                    </label>
+
+                </div>
+                
+
+            </div>
+            <div class="check">
+                <label for="">
+                    include results in swedish?
+                    <input type="checkbox">
+                </label>
+
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search..." class="search-field" name="search">
+                <button class="btn-search">🔍</button>
+
+            </div>
+           
+
+        </fieldset>
+
+    </form>
+
+    
+</body>
+</html>
