@@ -12,15 +12,15 @@
     <form class="form-one" action="https://httpbin.org/self" method="post">
         <label for="">
             Name:
-            <input type="text" required>
+            <input type="text" required name="text">
         </label>
         <label for="">
             Email:
-            <input type="email" required>
+            <input type="email" required name="email">
         </label>
         <label for="">
             choose:
-            <select name="" id="phones">
+            <select name="phone" id="phones">
                 <option value="">iphone 8</option>
                 <option value="">iphone 12</option>
                 <option value="">iphone 12 promax</option>
@@ -31,7 +31,7 @@
 
     </form>
     <h1>Form Two:</h1>
-    <form action="" class="form-two" method="post">
+    <form action="https://httpbin.org/mina" class="form-two" method="post">
         <fieldset>
             <legend>This is a search form</legend>
             <div class="radio">
@@ -39,27 +39,27 @@
                 <div class="radio-col">
                     <label for="" class="radiobutton-container">
                         20
-                        <input type="radio" name="answer" checked>
+                        <input type="radio" name="answer" value="20" checked>
                         <span class="costum-radio"></span>
                     </label>
                     <label for="" class="radiobutton-container">
                         40
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" value="40">
                         <span class="costum-radio"></span>
                     </label>
                     <label for="" class="radiobutton-container">
                         60
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" value="60">
                         <span class="costum-radio"></span>
                     </label>
                     <label for="" class="radiobutton-container">
                         80
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" value="80">
                         <span class="costum-radio"></span>
                     </label>
                     <label for="" class="radiobutton-container">
                         100
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" value="100">
                         <span class="costum-radio"></span>
                     </label>
 
@@ -70,7 +70,7 @@
             <div class="check">
                 <label for="" class="checkbox-container">
                     include results in swedish?
-                    <input type="checkbox">
+                    <input name="box" type="checkbox">
                     <span class="costum-checkbox"></span>
                 </label>
 

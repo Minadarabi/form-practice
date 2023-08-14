@@ -55,6 +55,12 @@ select{
     padding: 10px;
     margin: 40px;
     font-weight: bold;
+   transition: all .2s ease-in;
+   cursor: pointer;
+
+}
+.btn:active{
+    transform: scale(.8);
 }
 .form-two{
    
@@ -136,6 +142,7 @@ p{
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 2;
 
 }
 .costum-radio{
@@ -191,6 +198,7 @@ p{
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 .costum-checkbox{
     position: absolute;
